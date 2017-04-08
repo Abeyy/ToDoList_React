@@ -10,15 +10,22 @@ var Board = React.createClass({
 				'I like Bacon',
 				'Ice Cream is good',
 				'Beans are okay'
-			]
+			],
+
+			adding: false
 
 		}
 	},
 
-	addComment: function(text){
+	add: function(){
+		this.setState({adding: true});
+	},
+
+	addComment: function(){
 		var arr = this.state.comments;
-		arr.push(text);
+		arr.push(this.refs.newCommentText.value);
 		this.setState({comments: arr});
+		this.setState({adding: false});
 	},
 
 	removeComment: function(i){
@@ -39,13 +46,36 @@ var Board = React.createClass({
 		);
 	},
 
-	render: function(){
-		return (<div>
-				<button onClick={this.addComment.bind(null,'Default Text')}>Add New</button>
+	renderNormal: function(){
+		return(
+			<div>
+				<button onClick={this.add}>Add New</button>
 				{this.state.comments.map(this.eachComment)}
-					<Checkbox />
-				</div>
-			)
+				
+				<Checkbox />
+			</div>
+			);
+	},
+
+	renderAdding: function(){
+		return(
+			<div>
+				<textarea ref="newCommentText"></textarea>
+				<button onClick={this.addComment}>Save</button>
+				{this.state.comments.map(this.eachComment)}
+				
+				<Checkbox />
+			</div>
+			);
+	},
+
+	render: function(){
+		if(this.state.adding){		
+			return this.renderAdding();
+		}else{
+			return this.renderNormal();
+		}
+		
 	}
 });
 
