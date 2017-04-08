@@ -49,10 +49,11 @@ var Board = React.createClass({
 	renderNormal: function(){
 		return(
 			<div>
-				<button onClick={this.add}>Add New</button>
 				{this.state.comments.map(this.eachComment)}
-				
-				<Checkbox />
+				<br />
+				<div className="row centerMe">
+				<button className="btn btn-info btn-addNew"onClick={this.add}>Add New</button>
+				</div>
 			</div>
 			);
 	},
@@ -60,11 +61,10 @@ var Board = React.createClass({
 	renderAdding: function(){
 		return(
 			<div>
-				<textarea ref="newCommentText"></textarea>
+				<textarea maxLength="65" ref="newCommentText"></textarea>
 				<button onClick={this.addComment}>Save</button>
 				{this.state.comments.map(this.eachComment)}
 				
-				<Checkbox />
 			</div>
 			);
 	},

@@ -1,3 +1,43 @@
-h1 {
-  color: tomato;
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+body {
+	background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/807677/fabric.png');
+}
+
+.marginizer{
+	margin:5em;
+}
+
+.centerMe{
+	text-align: center;
+}
+.btn-addNew{
+	text-align: center;
+	font-size:5em;
+	font-family: 'Permanent Marker', cursive;
+	margin-top: 15px;
+}
+
+.marginizer-btn{
+	margin: .3em;
+}
+
+.note {
+  color: #333;
+  width: 30.5em;
+  height: 20.5em;
+  padding: 1.5em;
+  margin: 2em;
+  // background: #fff;
+  // For Post-it uncomment below and remove pin
+  background: #eae672;
+  transform: rotate(2deg);
+  box-shadow: 0 .625em .625em .125em rgba(0,0,0,0.3);
+
+}
+ 
+.p  {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 1.5em;
+	text-align: center;
 }

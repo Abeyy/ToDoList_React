@@ -26,10 +26,18 @@ var Comment = React.createClass({
 
 	renderNormal: function(){
         return(
-			<div>
+        	<div className="">
+			<div className="col-md-4 col-s-4 col-lg-4">
+			<div className="note">
+			
+				<div className="p ">
 				<h1>{this.props.children} </h1>
-				<button onClick={this.edit}> Edit </button>
-				<button onClick={this.remove}> Delete </button>
+				<br />
+				<button className="btn btn-primary marginizer-btn"onClick={this.edit}> Edit </button>
+				<button className="btn btn-danger marginizer-btn" onClick={this.remove}> Delete </button>
+				</div>
+			</div>
+			</div>
 			</div>
         )
 	},
