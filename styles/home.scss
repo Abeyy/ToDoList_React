@@ -11,18 +11,29 @@ body {
 .centerMe{
 	text-align: center;
 }
+
+.centerMargin{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.centerButton{
+	margin:0 auto;
+}
+
 .btn-addNew{
 	text-align: center;
-	font-size:5em;
+	font-size:1.5em;
 	font-family: 'Permanent Marker', cursive;
 	margin-top: 15px;
+	background-color:#2F4F4F
 }
 
 .marginizer-btn{
 	margin: .3em;
 }
 
-.note {
+.yellow-note {
   color: #333;
   width: 30.5em;
   height: 20.5em;
@@ -34,6 +45,105 @@ body {
   transform: rotate(2deg);
   box-shadow: 0 .625em .625em .125em rgba(0,0,0,0.3);
 
+}
+
+.blue-note {
+  color: #333;
+  width: 30.5em;
+  height: 20.5em;
+  padding: 1.5em;
+  margin: 2em;
+  // background: #fff;
+  // For Post-it uncomment below and remove pin
+  background: rgb(175,244,254);
+  transform: rotate(2deg);
+  box-shadow: 0 .625em .625em .125em rgba(0,0,0,0.3);
+
+}
+
+.purple-note {
+  color: #333;
+  width: 30.5em;
+  height: 20.5em;
+  padding: 1.5em;
+  margin: 2em;
+  // background: #fff;
+  // For Post-it uncomment below and remove pin
+  background: rgb(183,203,253);
+  transform: rotate(2deg);
+  box-shadow: 0 .625em .625em .125em rgba(0,0,0,0.3);
+
+}
+
+.pink-note {
+  color: #333;
+  width: 30.5em;
+  height: 20.5em;
+  padding: 1.5em;
+  margin: 2em;
+  // background: #fff;
+  // For Post-it uncomment below and remove pin
+  background: rgb(254,199,200);
+  transform: rotate(2deg);
+  box-shadow: 0 .625em .625em .125em rgba(0,0,0,0.3);
+}
+
+.gray-note {
+  color: #333;
+  width: 30.5em;
+  height: 20.5em;
+  padding: 1.5em;
+  margin: 2em;
+  // background: #fff;
+  // For Post-it uncomment below and remove pin
+  background: rgb(238,238,238);
+  transform: rotate(2deg);
+  box-shadow: 0 .625em .625em .125em rgba(0,0,0,0.3);
+}
+
+.green-note {
+  color: #333;
+  width: 30.5em;
+  height: 20.5em;
+  padding: 1.5em;
+  margin: 2em;
+  // background: #fff;
+  // For Post-it uncomment below and remove pin
+  background: rgb(180,253,165);
+  transform: rotate(2deg);
+  box-shadow: 0 .625em .625em .125em rgba(0,0,0,0.3);
+}
+
+
+.addNote {
+  color: #333;
+  width: 20.5em;
+  height: 20.5em;
+  padding: 1.5em;
+  margin: 2em;
+  // background: #fff;
+  // For Post-it uncomment below and remove pin
+  background: white;
+  transform: rotate(2deg);
+  box-shadow: 0 .625em .625em .125em rgba(0,0,0,0.3);
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.5em;
+
+}
+
+.editNote {
+  color: #333;
+  width: 20.5em;
+  height: 15.5em;
+  padding: 1.5em;
+  margin: 2em;
+  // background: #fff;
+  // For Post-it uncomment below and remove pin
+  background: rgb(238,238,238);
+  transform: rotate(2deg);
+  box-shadow: 0 .625em .625em .125em rgba(0,0,0,0.3);
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.3em;
 }
  
 .p  {
