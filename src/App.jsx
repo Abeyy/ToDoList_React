@@ -68,7 +68,7 @@ var Board = React.createClass({
 
 	renderAdding: function(){
 		return(
-			<div>
+			<div className="centerFullMargin">
 				<div className="row">
 				<div className="centerMe centerMargin">
 				{this.state.comments.map(this.eachComment)}
@@ -77,7 +77,7 @@ var Board = React.createClass({
 				<br />
 
 				<div className="row">
-				<div className="col-s-12 col-md-12 col-lg-12 centerMe">
+				<div className="col-s-12 col-md-12 col-lg-12 centerMe centerMargin">
 				<textarea className="addNote" maxLength="65" ref="newCommentText"></textarea>
 				<br />
 				<button className="btn btn-addNew btn-success" onClick={this.addComment}>Save</button>

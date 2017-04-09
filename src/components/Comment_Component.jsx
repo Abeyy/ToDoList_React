@@ -133,7 +133,7 @@ var Comment = React.createClass({
 	renderForm: function(){
         return(
 			<div>
-			<div className="row">
+			<div className="row centerMargin">
 				<div className="col-s-4 col-md-4 col-lg-4 centerMe">
 				<textarea className="editNote" ref="newText" defaultValue={this.props.children}></textarea>
 				
