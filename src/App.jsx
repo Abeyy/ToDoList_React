@@ -9,7 +9,8 @@ var Board = React.createClass({
 			comments:[
 				'I like Bacon',
 				'Ice Cream is good',
-				'Beans are okay'
+				'Beans are okay',
+				'Why is Jenkins so bad'
 			],
 
 			adding: false
